@@ -16,7 +16,7 @@ export default function WhyChooseCard({
 }: WhyChooseCardProps) {
   return (
     <>
-      <div className="w-[280.62646484375px] h-[350px] bg-white rounded-[20px] shadow-[0px_4px_40px_rgba(0,0,0,0.1)] flex flex-col items-center p-4">
+      <div className="min-w-[260px] max-w-[280px] h-[350px] bg-white rounded-[20px] shadow-[0px_4px_40px_rgba(0,0,0,0.1)] flex-shrink-0 flex flex-col items-center p-4">
         <div className="h-[202px] flex items-center justify-center mb-2">
           <Image
             src={imageSrc}
