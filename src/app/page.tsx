@@ -1,9 +1,12 @@
 import Image from "next/image";
+import Hero from "./components/Hero";
+import Service from "./components/Service";
 
 export default function Home() {
   return (
-    <>
-      <h1>Mediversal</h1>
-    </>
+    <div className="flex flex-col items-center justify-center min-h-screen">
+      <Hero />
+      <Service />
+    </div>
   );
 }
