@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { Search } from "lucide-react";
 
+import ConsultationSection from "./ConsultationCardCarousel";
 const Hero: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState("");
 
@@ -102,32 +103,7 @@ const Hero: React.FC = () => {
                 className="rounded-lg"
               />
 
-              {/* Online Consultation Card */}
-              <div className="absolute bottom-4 right-4 bg-white rounded-lg shadow-lg p-3 max-w-xs flex">
-                <div className="w-16 h-16 rounded-lg overflow-hidden mr-3">
-                  <Image
-                    src="./doctor.svg"
-                    alt="Doctor"
-                    width={64}
-                    height={64}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="flex-1">
-                  <div className="text-xs text-[#0088B1] font-medium">
-                    Available 24/7
-                  </div>
-                  <h4 className="font-medium text-sm text-[#161D1F]">
-                    Online Consultation
-                  </h4>
-                  <p className="text-xs text-[#6D7578]">
-                    Talk to specialist doctor's in just 10 minutes
-                  </p>
-                  <button className="text-[#0088B1] bg-[#E8F4F7] p-2 text-xs font-medium mt-1">
-                    Consult Now
-                  </button>
-                </div>
-              </div>
+              <ConsultationSection />
             </div>
           </div>
         </div>
