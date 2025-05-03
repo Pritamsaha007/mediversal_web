@@ -47,7 +47,7 @@ function Banner() {
         </div>
       </div>
 
-      <div className="hidden lg:flex w-1/4 relative -mt-24 justify-center items-center">
+      <div className="hidden lg:flex w-1/4 relative -mt-24 bottom-0 justify-center items-center">
         <Image src={BannerImage1} alt="Banner 1" className="w-full h-auto" />
       </div>
     </div>
