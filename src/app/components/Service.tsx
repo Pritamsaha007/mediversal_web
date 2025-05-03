@@ -285,19 +285,6 @@ export default function ServiceComponent() {
 
       {/* Services slider with navigation */}
       <div className="flex items-center relative">
-        {/* Left scroll button */}
-        <button
-          className={`z-10 bg-white rounded-full p-1 shadow-md mr-1 md:mr-2 ${
-            scrollPosition <= 0
-              ? "opacity-50 cursor-not-allowed"
-              : "opacity-100"
-          }`}
-          onClick={scrollLeft}
-          disabled={scrollPosition <= 0}
-        >
-          <ChevronLeft size={20} className="md:w-6 md:h-6" />
-        </button>
-
         {/* Services container */}
         <div
           ref={scrollContainerRef}
@@ -332,19 +319,6 @@ export default function ServiceComponent() {
             </div>
           ))}
         </div>
-
-        {/* Right scroll button */}
-        <button
-          className={`z-10 bg-white rounded-full p-1 shadow-md ml-1 md:ml-2 ${
-            scrollPosition >= maxScroll
-              ? "opacity-50 cursor-not-allowed"
-              : "opacity-100"
-          }`}
-          onClick={scrollRight}
-          disabled={scrollPosition >= maxScroll}
-        >
-          <ChevronRight size={20} className="md:w-6 md:h-6" />
-        </button>
       </div>
 
       {/* Service section content */}

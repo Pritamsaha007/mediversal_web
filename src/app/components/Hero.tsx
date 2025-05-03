@@ -10,17 +10,17 @@ const Hero: React.FC = () => {
   return (
     <div className="bg-[#F8F8F8] w-full">
       <div className="container mx-auto px-4 py-8 md:py-4">
-        <div className="flex flex-col md:flex-row items-center justify-between">
+        <div className="flex flex-col md:flex-row items-center justify-between ml-20">
           {/* Text Content */}
           <div className="w-full md:w-1/2 text-left md:text-left mb-8 md:mb-0">
-            <h1 className="text-4xl md:text-5xl font-light">
+            <h1 className="text-4xl md:text-5xl font-light md:py-2">
               <span className="text-[#B0B6B8] ">All Your </span>
               <span className="text-[#161D1F] font-medium bg-[#E8F4F7]">
                 health needs
               </span>
               <span className="text-gray-400">,</span>
             </h1>
-            <h2 className="text-4xl md:text-5xl font-light mt-2">
+            <h2 className="text-4xl md:text-5xl font-light mt-2 md:py-2">
               <span className="text-[#B0B6B8]">One Simple App </span>
               <span className="text-[#161D1F] font-medium bg-[#E8F4F7]">
                 Trusted Care.
@@ -93,13 +93,13 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Image Section */}
-          <div className="w-full md:w-1/2 relative">
+          <div className="w-full md:w-1/2 relative mt-[-80px] ">
             <div className="relative">
               <Image
                 src="/hero.svg"
                 alt="Doctor with stethoscope"
                 width={750}
-                height={500}
+                height={100}
                 className="rounded-lg"
               />
 
