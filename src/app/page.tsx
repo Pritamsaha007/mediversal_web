@@ -5,10 +5,14 @@ import VideoCard from "./components/videoCard";
 import Banner from "./components/Banner";
 import Footer from "./components/Foooter";
 import { Video } from "lucide-react";
+import Hero from "./components/Hero";
+import ServiceComponent from "./components/Service";
 
 export default function Home() {
   return (
-    <div className="bg-white">
+    <div>
+      <Hero />
+      <ServiceComponent />
       <h2 className="text-2xl sm:text-3xl font-semibold text-center text-[#0088B1]">
         Why Choose Mediversal
       </h2>
@@ -18,6 +22,14 @@ export default function Home() {
           p1="100% original medicines delivered safely to your home."
         />
 
+        <WhyChooseCard
+          h1="Accurate Tests & Reports"
+          p1="Reliable tests from NABL - accredited labs for accurate results."
+        />
+        <WhyChooseCard
+          h1="Accurate Tests & Reports"
+          p1="Reliable tests from NABL - accredited labs for accurate results."
+        />
         <WhyChooseCard
           h1="Accurate Tests & Reports"
           p1="Reliable tests from NABL - accredited labs for accurate results."
