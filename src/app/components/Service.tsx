@@ -13,8 +13,8 @@ export default function CardContainer() {
       </p>
 
       {/* Scrollable container */}
-      <div className="relative">
-        <div className="overflow-x-auto pb-4 hide-scrollbar">
+      <div className="overflow-x-auto hide-scrollbar">
+        <div className="flex flex-nowrap gap-6 px-6 py-6 md:flex-wrap md:justify-center lg:px-10">
           <div className="flex space-x-6 px-4 min-w-max">
             {healthcareCards.map((card, index) => (
               <div key={index} className="flex-shrink-0">
