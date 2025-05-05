@@ -8,7 +8,7 @@ import Image from "next/image";
 function Banner() {
   return (
     <div className="w-full bg-primary flex bg-[#0088B1] justify-between items-center px-5 py-16 lg:px-5 lg:py-16 xl:px-20 xl:py-20 flex-wrap">
-      <div className="hidden lg:flex w-1/4 relative -mb-16 justify-center items-center">
+      <div className="hidden lg:flex w-1/4 relative -mb-20 justify-center items-center">
         <Image src={BannerImage} alt="Banner" className="w-full h-auto" />
       </div>
 
@@ -47,7 +47,7 @@ function Banner() {
         </div>
       </div>
 
-      <div className="hidden lg:flex w-1/4 relative -mt-24 bottom-0 justify-center items-center">
+      <div className="hidden lg:flex w-1/4 relative -mt-20 bottom-0 justify-center items-center">
         <Image src={BannerImage1} alt="Banner 1" className="w-full h-auto" />
       </div>
     </div>

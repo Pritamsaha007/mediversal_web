@@ -1,14 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import DoctorImage1 from "../../../public/doctor.svg";
 import Image from "next/image";
-
-interface ConsultationCardData {
-  imageSrc: string;
-  availability: string;
-  title: string;
-  description: string;
-  buttonText: string;
-}
+import { ConsultationCardData } from "../types";
 
 const ConsultationCard = ({
   imageSrc,

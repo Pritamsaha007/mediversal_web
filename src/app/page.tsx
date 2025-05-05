@@ -73,7 +73,7 @@ export default function Home() {
             testimonial="Having a technician come to my home was a game changer. I would recommend this service to everyone."
             rating={4}
           />
-          <button className="flex-shrink-0 inline-flex items-center justify-center bg-white text-[#0088B1] border border-[#0088B1] rounded-md px-5 py-2 text-base transition-all duration-300 hover:bg-primary hover:text-white hover:scale-105">
+          <button className="flex-shrink-0 inline-flex items-center justify-center bg-white text-[#0088B1] border border-[#0088B1] rounded-md px-5 py-2 text-base transition-all duration-300 hover:bg-primary hover:text-[#0088B1] hover:scale-105">
             <Video className="w-5 h-5 mr-2" />
             Watch Video Stories
           </button>

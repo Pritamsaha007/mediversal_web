@@ -4,7 +4,7 @@ import { healthcareCards } from "../CardData";
 
 export default function CardContainer() {
   return (
-    <div className="p-2 bg-[#F8F8F8]">
+    <div className="p-2 bg-white">
       <h1 className="text-[48px] font-bold text-center text-[#161D1F]">
         Our Services, Made for You
       </h1>
