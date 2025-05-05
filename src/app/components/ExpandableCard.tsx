@@ -31,6 +31,7 @@ export default function ExpandableCard({
             className="object-cover w-full h-full"
             height={280}
             width={300}
+            priority={true}
           />
           {/* Gradient overlay for better text visibility */}
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/30"></div>

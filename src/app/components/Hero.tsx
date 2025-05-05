@@ -87,6 +87,7 @@ const Hero: React.FC = () => {
                       width={32}
                       height={32}
                       className="w-full h-full object-cover"
+                      priority={true}
                     />
                   </div>
                 ))}
@@ -109,6 +110,7 @@ const Hero: React.FC = () => {
                 width={750}
                 height={100}
                 className="w-full h-auto rounded-lg"
+                priority={true}
               />
 
               {/* Conditionally render this absolutely at the bottom */}
@@ -128,6 +130,7 @@ const Hero: React.FC = () => {
                               width={32}
                               height={32}
                               className="w-full h-full object-cover"
+                              priority={true}
                             />
                           </div>
                         ))}
