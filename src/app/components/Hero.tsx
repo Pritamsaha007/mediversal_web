@@ -16,27 +16,24 @@ const Hero: React.FC = () => {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
   return (
-    <div className="bg-white w-full">
-      <div className="container mx-auto px-4 py-4 md:py-8">
-        <div className="flex flex-col md:flex-row items-center justify-between md:space-x-6 md:ml-10">
+    <div className="bg-white w-full flex justify-between items-center ">
+      <div className="py-4 w-full md:py-8">
+        <div className="flex flex-col w-full md:flex-row items-center justify-between">
           {/* Text Content */}
-          <div className="w-full md:w-1/2 text-center md:text-left mb-8 md:mb-0">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-light">
+          <div className="w-full text-center md:text-left mb-8 md:mb-0">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-light ">
               <span className="text-[#B0B6B8]">All Your </span>
-              <span className="text-[#161D1F] font-medium bg-[#E8F4F7]">
-                health needs
+              <span className="text-[#161D1F] font-medium bg-[#E8F4F7] rounded-lg px-2 ">
+                health needs,
               </span>
-              <span className="text-gray-400">,</span>
             </h1>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-light mt-2">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-light mt-2 md:leading-16">
               <span className="text-[#B0B6B8]">One Simple App </span>
-              <span className="text-[#161D1F] font-medium bg-[#E8F4F7]">
+              <span className="text-[#161D1F] font-medium bg-[#E8F4F7] rounded-lg px-2">
                 Trusted Care.
               </span>
+              <span className="text-[#B0B6B8]"> Anytime, Anywhere</span>
             </h2>
-            <h3 className="text-3xl sm:text-4xl md:text-5xl font-light text-[#B0B6B8] mt-2">
-              Anytime/Anywhere
-            </h3>
 
             <p className="text-[#B0B6B8] mt-4 md:mt-6 max-w-lg mx-auto md:mx-0">
               Instantly connect with doctors, order medicines, or book lab
@@ -102,7 +99,7 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Image Section */}
-          <div className="w-full md:w-1/2 relative mt-4 md:mt-[-100px]">
+          <div className="w-full  relative mt-4 md:mt-[-100px]">
             <div className="relative">
               <Image
                 src="/hero.svg"

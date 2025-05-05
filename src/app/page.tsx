@@ -10,7 +10,7 @@ import Service from "./components/Service";
 
 export default function Home() {
   return (
-    <div className="bg-white">
+    <div className="bg-white md:px-[100px] px-[10px]">
       <Hero />
       <Service />
       <h2 className="text-2xl sm:text-3xl font-semibold text-center text-[#0088B1] mt-5">

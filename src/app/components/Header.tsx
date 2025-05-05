@@ -17,8 +17,8 @@ const Header = () => {
   ];
 
   return (
-    <header className="w-full bg-transparent sticky z-50 mt-6">
-      <div className=" mx-auto flex items-center justify-between px-4 py-3 md:px-6 lg:px-8">
+    <header className="w-full bg-transparent sticky z-50 mt-6 md:px-[100px]">
+      <div className=" mx-auto flex items-center justify-between py-3 px-4">
         {/* Left section: Logo + Nav */}
         <div className="flex items-center space-x-8">
           {/* Logo */}
@@ -52,7 +52,7 @@ const Header = () => {
         </div>
 
         {/* Right: Download App button (desktop only) */}
-        <div className="hidden md:flex">
+        <div className="hidden md:flex md:mr-3">
           <button className="flex items-center gap-2 px-4 py-2 rounded-lg bg-[#0088B1] text-white text-sm font-medium hover:opacity-90 transition">
             <Download className="w-4 h-4" />
             Download App
