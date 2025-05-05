@@ -9,15 +9,10 @@ import {
   Activity,
   Thermometer,
   Calendar,
-  Clock,
-  Clipboard,
-  Monitor,
   Video,
   MessageCircle,
   Users,
-  Truck,
-  Package,
-  Clock3,
+  BaggageClaim,
 } from "lucide-react";
 import { CardData } from "./types";
 
@@ -52,8 +47,37 @@ export const healthcareCards: CardData[] = [
     },
   },
   {
+    icon: <BaggageClaim className="w-8 h-8 text-[#161D1F]" />,
+    title: "E-Pharmacy",
+    description: "Convenient online pharmacy for all your needs",
+    imagePath: "./E-Pharmacy.svg",
+    additionalInfo: {
+      title: "Quality Healthcare Consultations",
+      description: "Get expert medical advice from the comfort of your home.",
+      services: [
+        {
+          icon: <Video className="w-6 h-6 text-yellow-500" />,
+          name: "Video Consultation",
+          description: "Connect with specialists via secure video calls.",
+        },
+        {
+          icon: <Calendar className="w-6 h-6 text-yellow-500" />,
+          name: "In-Home Doctor Visits",
+          description:
+            "Have a physician come to your residence for examinations.",
+        },
+        {
+          icon: <MessageCircle className="w-6 h-6 text-yellow-500" />,
+          name: "Follow-up Care",
+          description: "Ongoing support and monitoring after consultations.",
+        },
+      ],
+      buttonText: "Book an Appointment",
+    },
+  },
+  {
     icon: <Stethoscope className="w-8 h-8 text-[#161D1F]" />,
-    title: "Doctor Consultation",
+    title: "Online Consultation",
     description: "Connect with specialists for personalized medical advice",
     imagePath: "./Doctor.svg",
     additionalInfo: {
@@ -82,9 +106,9 @@ export const healthcareCards: CardData[] = [
   },
   {
     icon: <Heart className="w-8 h-8 text-[#161D1F]" />,
-    title: "Elderly Care",
-    description: "Compassionate support for seniors with specialized needs",
-    imagePath: "./HealthCheckup.svg",
+    title: "Lab & Diagnostic Test",
+    description: "Receive your lab results right at home.",
+    imagePath: "./Lab.svg",
     additionalInfo: {
       title: "Dedicated Care for Seniors",
       description:
@@ -113,9 +137,9 @@ export const healthcareCards: CardData[] = [
   },
   {
     icon: <Baby className="w-8 h-8 text-[#161D1F]" />,
-    title: "Pediatric Services",
-    description: "Child-friendly healthcare for your little ones",
-    imagePath: "./Lab.svg",
+    title: "Health Checkups",
+    description: "Keep your health in good condition with our health checkup.",
+    imagePath: "./HealthCheckUp.svg",
     additionalInfo: {
       title: "Expert Pediatric Care",
       description:
@@ -141,35 +165,6 @@ export const healthcareCards: CardData[] = [
         },
       ],
       buttonText: "Book Pediatric Care",
-    },
-  },
-  {
-    icon: <Pill className="w-8 h-8 text-[#161D1F]" />,
-    title: "Medication Delivery",
-    description: "Fast and reliable delivery of prescribed medications",
-    imagePath: "./OnlineCouns.svg",
-    additionalInfo: {
-      title: "Reliable Medication Delivery",
-      description: "Get your prescriptions delivered safely to your doorstep.",
-      services: [
-        {
-          icon: <Truck className="w-6 h-6 text-yellow-500" />,
-          name: "Rx Delivery",
-          description: "Same-day delivery with proper storage and handling.",
-        },
-        {
-          icon: <Package className="w-6 h-6 text-yellow-500" />,
-          name: "Monthly Medication Box",
-          description:
-            "Pre-sorted medications delivered on a recurring schedule.",
-        },
-        {
-          icon: <Clock className="w-6 h-6 text-yellow-500" />,
-          name: "Medication Reminders",
-          description: "Timely alerts and dosage tracking to ensure adherence.",
-        },
-      ],
-      buttonText: "Order Medication",
     },
   },
 ];

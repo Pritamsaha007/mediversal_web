@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { CardData } from "../types";
+import Image from "next/image";
 
 export default function ExpandableCard({
   icon,
@@ -24,10 +25,12 @@ export default function ExpandableCard({
       <div className="flex-none w-72 relative">
         {/* Background Image */}
         <div className="absolute inset-0">
-          <img
+          <Image
             src={imagePath || "/api/placeholder/300/280"}
             alt={title}
-            className="w-full h-full object-cover"
+            className="object-cover w-full h-full"
+            height={280}
+            width={300}
           />
           {/* Gradient overlay for better text visibility */}
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/30"></div>
