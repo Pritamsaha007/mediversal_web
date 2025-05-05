@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
   return (
     <div className="bg-white w-full">
       <div className="container mx-auto px-4 py-4 md:py-8">
-        <div className="flex flex-col md:flex-row items-center justify-between md:space-x-6">
+        <div className="flex flex-col md:flex-row items-center justify-between md:space-x-6 md:ml-10">
           {/* Text Content */}
           <div className="w-full md:w-1/2 text-center md:text-left mb-8 md:mb-0">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-light">
@@ -101,7 +101,7 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Image Section */}
-          <div className="w-full md:w-1/2 relative mt-4 md:mt-0">
+          <div className="w-full md:w-1/2 relative mt-4 md:mt-[-100px]">
             <div className="relative">
               <Image
                 src="/hero.svg"
