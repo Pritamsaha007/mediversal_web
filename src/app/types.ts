@@ -24,3 +24,10 @@ export interface CardData {
   imagePath?: string;
   additionalInfo: AdditionalInfo;
 }
+export interface ConsultationCardData {
+  imageSrc: string;
+  availability: string;
+  title: string;
+  description: string;
+  buttonText: string;
+}
