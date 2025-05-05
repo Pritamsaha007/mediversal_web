@@ -2,8 +2,7 @@ import Image from "next/image";
 import WhyChooseCard from "./components/whyChooseCard";
 import TestimonialCard from "./components/testimonialCard";
 import VideoCard from "./components/videoCard";
-import Banner from "./components/Banner";
-import Footer from "./components/Foooter";
+
 import { Video } from "lucide-react";
 import Hero from "./components/Hero";
 import Service from "./components/Service";
@@ -81,9 +80,6 @@ export default function Home() {
           Watch Video Stories
         </button>
       </div>
-      <Banner />
-
-      <Footer />
     </div>
   );
 }

@@ -18,7 +18,7 @@ const Header = () => {
 
   return (
     <header className="w-full bg-transparent sticky z-50 mt-6 md:px-[100px]">
-      <div className=" mx-auto flex items-center justify-between py-3 px-4">
+      <div className=" mx-auto flex items-center justify-between py-3 px-4 md:px-0">
         {/* Left section: Logo + Nav */}
         <div className="flex items-center space-x-8">
           {/* Logo */}
