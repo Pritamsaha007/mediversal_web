@@ -79,7 +79,7 @@ export const healthcareCards: CardData[] = [
     icon: <Stethoscope className="w-8 h-8 text-[#161D1F]" />,
     title: "Online Consultation",
     description: "Connect with specialists for personalized medical advice",
-    imagePath: "./Doctor.svg",
+    imagePath: "./doctor.svg",
     additionalInfo: {
       title: "Quality Healthcare Consultations",
       description: "Get expert medical advice from the comfort of your home.",
