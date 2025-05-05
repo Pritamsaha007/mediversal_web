@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { CardData } from "../types"; // Adjust the import path as necessary
+import { CardData } from "../types";
 
 export default function ExpandableCard({
   icon,
@@ -15,7 +15,7 @@ export default function ExpandableCard({
       className="relative flex rounded-lg overflow-hidden shadow-lg transition-all duration-300 ease-in-out bg-white"
       style={{
         width: isHovered ? "800px" : "300px",
-        height: "480px",
+        height: "420px",
       }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -34,17 +34,22 @@ export default function ExpandableCard({
         </div>
 
         {/* Content on top of the image */}
-        <div className="relative h-full w-full flex flex-col justify-between p-4 text-white z-10">
-          <div>
-            <div className="flex items-center mb-3">{icon}</div>
-            <h2 className="text-xl font-bold text-white mb-2">{title}</h2>
-            <p className="text-sm text-gray-100 line-clamp-3">{description}</p>
+        <div className="relative h-full w-full flex flex-col justify-between p-4 text-[#161D1F] z-10">
+          <div className="flex items-center mb-3">
+            <div className="bg-[#F8F8F8] p-2 rounded-full inline-flex">
+              {icon}
+            </div>
           </div>
 
-          <div className="mt-2">
-            <span className="text-xs font-medium text-blue-200 bg-blue-900/40 px-2 py-1 rounded">
-              {isHovered ? "Explore Details" : "Hover for details →"}
-            </span>
+          <div>
+            <p className="text-sm text-gray-100 text-left mb-3">
+              {description}
+            </p>
+            <div className="flex justify-center">
+              <button className="bg-white text-[#161D1F] text-[16px] font-semibold px-4 py-3 rounded shadow w-full">
+                {title}
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -57,7 +62,7 @@ export default function ExpandableCard({
       >
         <div className="p-6 h-full flex flex-col">
           {/* Header */}
-          <div className="border-b pb-4 mb-6">
+          <div className="border-b pb-4 mb-6 mt-2">
             <h3 className="text-xl font-bold text-[#161D1F]">
               {additionalInfo.title}
             </h3>
@@ -70,15 +75,26 @@ export default function ExpandableCard({
           <div className="flex-grow">
             {additionalInfo.services?.map((service, index) => (
               <div key={index} className="mb-5">
-                <div className="flex items-center mb-2">
-                  {service.icon}
-                  <h4 className="font-semibold text-gray-800 ml-2">
-                    {service.name}
-                  </h4>
+                <div className="flex items-start justify-between">
+                  {/* Left content: Icon, Name, Description */}
+                  <div className="flex items-start">
+                    <div className="bg-[#E5E8E9] p-2 rounded-full mt-1 mr-3">
+                      {service.icon}
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-[#161D1F] text-[14px]">
+                        {service.name}
+                      </h4>
+                      <p className="text-[10px] text-[#B0B6B8] mt-1">
+                        {service.description}
+                      </p>
+                    </div>
+                  </div>
+                  {/* Right: Book Now Button */}
+                  <button className="text-[#0088B1] text-sm font-semibold ml-4 mt-1 whitespace-nowrap border border-[#0088B1] rounded px-8 py-1">
+                    Book Now
+                  </button>
                 </div>
-                <p className="text-sm text-gray-600 ml-6">
-                  {service.description}
-                </p>
               </div>
             ))}
 
@@ -93,13 +109,6 @@ export default function ExpandableCard({
                 </p>
               </div>
             )}
-          </div>
-
-          {/* Call to action */}
-          <div className="mt-auto pt-4 border-t">
-            <button className="w-full px-4 py-3 bg-blue-600 text-white rounded-md font-medium hover:bg-blue-700 transition-colors">
-              {additionalInfo.buttonText || "Book Now"}
-            </button>
           </div>
         </div>
       </div>

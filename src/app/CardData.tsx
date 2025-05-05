@@ -23,7 +23,7 @@ import { CardData } from "./types";
 
 export const healthcareCards: CardData[] = [
   {
-    icon: <Home className="w-8 h-8 text-white" />,
+    icon: <Home className="w-8 h-8 text-[#161D1F] font-extralight" />,
     title: "Homecare Services",
     description: "Expert Healthcare professionals at your doorstep",
     imagePath: "./Homecare.svg",
@@ -33,17 +33,17 @@ export const healthcareCards: CardData[] = [
         "Trusted professionals for comfort, care & recovery at home.",
       services: [
         {
-          icon: <User className="w-5 h-5 text-blue-600" />,
+          icon: <User className="w-6 h-6 text-yellow-500" />,
           name: "Caretaker at Home",
           description: "Help with daily tasks, hygiene, and patient support.",
         },
         {
-          icon: <ClipboardList className="w-5 h-5 text-blue-600" />,
+          icon: <ClipboardList className="w-6 h-6 text-yellow-500" />,
           name: "Nurse at Home",
           description: "Wound care, injections & post-surgery recovery.",
         },
         {
-          icon: <Activity className="w-5 h-5 text-blue-600" />,
+          icon: <Activity className="w-6 h-6 text-yellow-500" />,
           name: "Physiotherapy at Home",
           description: "Pain relief, rehab exercises & improved mobility.",
         },
@@ -52,7 +52,7 @@ export const healthcareCards: CardData[] = [
     },
   },
   {
-    icon: <Stethoscope className="w-8 h-8 text-white" />,
+    icon: <Stethoscope className="w-8 h-8 text-[#161D1F]" />,
     title: "Doctor Consultation",
     description: "Connect with specialists for personalized medical advice",
     imagePath: "./Doctor.svg",
@@ -61,18 +61,18 @@ export const healthcareCards: CardData[] = [
       description: "Get expert medical advice from the comfort of your home.",
       services: [
         {
-          icon: <Video className="w-5 h-5 text-blue-600" />,
+          icon: <Video className="w-6 h-6 text-yellow-500" />,
           name: "Video Consultation",
           description: "Connect with specialists via secure video calls.",
         },
         {
-          icon: <Calendar className="w-5 h-5 text-blue-600" />,
+          icon: <Calendar className="w-6 h-6 text-yellow-500" />,
           name: "In-Home Doctor Visits",
           description:
             "Have a physician come to your residence for examinations.",
         },
         {
-          icon: <MessageCircle className="w-5 h-5 text-blue-600" />,
+          icon: <MessageCircle className="w-6 h-6 text-yellow-500" />,
           name: "Follow-up Care",
           description: "Ongoing support and monitoring after consultations.",
         },
@@ -81,7 +81,7 @@ export const healthcareCards: CardData[] = [
     },
   },
   {
-    icon: <Heart className="w-8 h-8 text-white" />,
+    icon: <Heart className="w-8 h-8 text-[#161D1F]" />,
     title: "Elderly Care",
     description: "Compassionate support for seniors with specialized needs",
     imagePath: "./HealthCheckup.svg",
@@ -91,19 +91,19 @@ export const healthcareCards: CardData[] = [
         "Specialized care services designed for elderly comfort and well-being.",
       services: [
         {
-          icon: <Users className="w-5 h-5 text-blue-600" />,
+          icon: <Users className="w-6 h-6 text-yellow-500" />,
           name: "Senior Companion",
           description:
             "Companionship, medication management, and personal care.",
         },
         {
-          icon: <Calendar className="w-5 h-5 text-blue-600" />,
+          icon: <Calendar className="w-6 h-6 text-yellow-500" />,
           name: "Memory Care",
           description:
             "Specialized support for seniors with dementia or Alzheimer's.",
         },
         {
-          icon: <Activity className="w-5 h-5 text-blue-600" />,
+          icon: <Activity className="w-6 h-6 text-yellow-500" />,
           name: "Mobility Assistance",
           description: "Help with movement, exercise, and fall prevention.",
         },
@@ -112,7 +112,7 @@ export const healthcareCards: CardData[] = [
     },
   },
   {
-    icon: <Baby className="w-8 h-8 text-white" />,
+    icon: <Baby className="w-8 h-8 text-[#161D1F]" />,
     title: "Pediatric Services",
     description: "Child-friendly healthcare for your little ones",
     imagePath: "./Lab.svg",
@@ -122,19 +122,19 @@ export const healthcareCards: CardData[] = [
         "Child-centered healthcare from certified pediatric specialists.",
       services: [
         {
-          icon: <Thermometer className="w-5 h-5 text-blue-600" />,
+          icon: <Thermometer className="w-6 h-6 text-yellow-500" />,
           name: "Child Development",
           description:
             "Growth monitoring, developmental assessment, and wellness plans.",
         },
         {
-          icon: <Calendar className="w-5 h-5 text-blue-600" />,
+          icon: <Calendar className="w-6 h-6 text-yellow-500" />,
           name: "Infant Care",
           description:
             "Specialized care for newborns and infants up to 12 months.",
         },
         {
-          icon: <Calendar className="w-5 h-5 text-blue-600" />,
+          icon: <Calendar className="w-6 h-6 text-yellow-500" />,
           name: "Pediatric First Aid",
           description:
             "Emergency response and care for children's injuries or illness.",
@@ -144,7 +144,7 @@ export const healthcareCards: CardData[] = [
     },
   },
   {
-    icon: <Pill className="w-8 h-8 text-white" />,
+    icon: <Pill className="w-8 h-8 text-[#161D1F]" />,
     title: "Medication Delivery",
     description: "Fast and reliable delivery of prescribed medications",
     imagePath: "./OnlineCouns.svg",
@@ -153,18 +153,18 @@ export const healthcareCards: CardData[] = [
       description: "Get your prescriptions delivered safely to your doorstep.",
       services: [
         {
-          icon: <Truck className="w-5 h-5 text-blue-600" />,
+          icon: <Truck className="w-6 h-6 text-yellow-500" />,
           name: "Rx Delivery",
           description: "Same-day delivery with proper storage and handling.",
         },
         {
-          icon: <Package className="w-5 h-5 text-blue-600" />,
+          icon: <Package className="w-6 h-6 text-yellow-500" />,
           name: "Monthly Medication Box",
           description:
             "Pre-sorted medications delivered on a recurring schedule.",
         },
         {
-          icon: <Clock className="w-5 h-5 text-blue-600" />,
+          icon: <Clock className="w-6 h-6 text-yellow-500" />,
           name: "Medication Reminders",
           description: "Timely alerts and dosage tracking to ensure adherence.",
         },

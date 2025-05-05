@@ -4,10 +4,13 @@ import { healthcareCards } from "../CardData";
 
 export default function CardContainer() {
   return (
-    <div className="p-6 bg-gray-100 min-h-screen">
-      <h1 className="text-2xl font-bold text-center mb-8">
-        Our Healthcare Services
+    <div className="p-2 bg-[#F8F8F8]">
+      <h1 className="text-[48px] font-bold text-center text-[#161D1F]">
+        Our Services, Made for You
       </h1>
+      <p className="text-[20px] text-center mb-8 text-[#B0B6B8]">
+        Explore our range of healthcare services tailored to your needs.
+      </p>
 
       {/* Scrollable container */}
       <div className="relative">
