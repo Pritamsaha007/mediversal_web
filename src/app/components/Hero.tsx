@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import { Download, Search, Smartphone } from "lucide-react";
+import { Download, Mic, Search, Smartphone, Voicemail } from "lucide-react";
 
 import ConsultationSection from "./ConsultationCardCarousel";
 
@@ -42,15 +42,18 @@ const Hero: React.FC = () => {
 
             {/* Search Bar */}
             <div className="relative mt-6 md:mt-8 max-w-xl mx-auto md:mx-0">
+              <button className="absolute left-3 top-1/2 transform -translate-y-1/2 text-[#161D1F]">
+                <Search size={20} />
+              </button>
               <input
                 type="text"
                 placeholder="Search medicines, symptoms, tests or doctors..."
-                className="w-full py-3 px-4 pr-12 text-[#B0B6B8] rounded-lg border bg-[#E8F4F7] border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#D3D7D8]"
+                className="w-full py-3 px-10 pr-12 text-[#B0B6B8] rounded-lg border bg-[#E8F4F7] border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#D3D7D8]"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
-              <button className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400">
-                <Search size={20} />
+              <button className="absolute right-3 top-1/2 transform -translate-y-1/2 text-[#0088B1]">
+                <Mic size={20} />
               </button>
             </div>
 
@@ -65,7 +68,7 @@ const Hero: React.FC = () => {
               <button className="bg-[#E8F4F7] text-[#899193] px-3 py-1 rounded-full text-sm">
                 Lab Tests
               </button>
-              <button className="bg-[#E8F4F7] text-[#899193] px-3 py-1 rounded-full text-sm">
+              <button className="bg-[#E8F4F7] text-[#899193] px-3 py-1 rounded-full text-sm hidden md:block">
                 Consult a Doctor
               </button>
             </div>
@@ -106,7 +109,7 @@ const Hero: React.FC = () => {
                 alt="Doctor with stethoscope"
                 width={750}
                 height={100}
-                className="w-full h-auto rounded-lg"
+                className="w-full md:h-[750px] h-auto object-cover rounded-lg"
                 priority={true}
               />
 
@@ -145,7 +148,7 @@ const Hero: React.FC = () => {
                     </button>
                   </>
                 ) : (
-                  <div className="mt-4 md:mt-0">
+                  <div className="mt-3 right-0 absolute w-full md:w-[410px]">
                     <ConsultationSection />
                   </div>
                 )}

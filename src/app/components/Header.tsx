@@ -17,8 +17,8 @@ const Header = () => {
   ];
 
   return (
-    <header className="w-full bg-transparent sticky z-50 mt-6 md:px-[100px]">
-      <div className=" mx-auto flex items-center justify-between py-3 px-4 md:px-0">
+    <header className="w-full bg-transparent sticky top-0 z-50 md:mt-6 md:px-[100px]">
+      <div className="mx-auto flex items-center justify-between py-3 px-4 md:px-0">
         {/* Left section: Logo + Nav */}
         <div className="flex items-center space-x-8">
           {/* Logo */}
@@ -63,17 +63,17 @@ const Header = () => {
         <div className="md:hidden">
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="bg-[#0088B1] p-2 rounded-md text-white hover:opacity-90 transition"
+            className="bg-[#0088B1] p-2 rounded-md text-white hover:opacity-90 transition z-50 relative"
           >
             {menuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
       </div>
 
-      {/* Mobile Dropdown */}
+      {/* Mobile Dropdown - Now positioned absolute */}
       {menuOpen && (
-        <div className="md:hidden bg-white px-4 pb-4 shadow-md">
-          <div className="flex flex-col space-y-4">
+        <div className="md:hidden bg-white/5 backdrop-blur-md shadow-lg fixed top-18 left-0 right-0 z-40">
+          <div className="flex flex-col items-center py-6 space-y-5">
             {navLinks.map((link) => (
               <Link
                 key={link.name}

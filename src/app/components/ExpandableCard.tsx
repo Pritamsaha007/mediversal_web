@@ -60,8 +60,8 @@ export default function ExpandableCard({
 
       {/* Additional Information (shown on hover) */}
       <div
-        className={`flex-grow transition-all duration-300 ease-in-out bg-white ${
-          isHovered ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"
+        className={`flex-grow transition-all duration-800 ease-in-out bg-white ${
+          isHovered ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-2"
         }`}
       >
         <div className="p-6 h-full flex flex-col">
