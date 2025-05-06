@@ -110,16 +110,16 @@ const ConsultationSection = () => {
     },
     {
       imageSrc: DoctorImage1,
-      availability: "Limited Slots",
-      title: "Specialist Advice",
-      description: "Get expert medical advice.",
+      availability: "Available 24/7",
+      title: "Healthcare Services",
+      description: "Talk to specialist.",
       buttonText: "Book Appointment",
     },
     {
       imageSrc: DoctorImage1,
-      availability: "Weekend Special",
-      title: "Wellness Checkup",
-      description: "Comprehensive health.",
+      availability: "Available 24/7",
+      title: "Lab Tests",
+      description: "Get tested at home.",
       buttonText: "Learn More",
     },
   ];

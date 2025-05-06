@@ -148,7 +148,7 @@ const Hero: React.FC = () => {
                     </button>
                   </>
                 ) : (
-                  <div className="mt-3 right-0 absolute w-full md:w-[410px]">
+                  <div className="mt-3 right-0 absolute w-full md:w-[425px]">
                     <ConsultationSection />
                   </div>
                 )}

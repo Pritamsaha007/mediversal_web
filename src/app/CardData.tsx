@@ -18,7 +18,12 @@ import { CardData } from "./types";
 
 export const healthcareCards: CardData[] = [
   {
-    icon: <Home className="w-8 h-8 text-[#161D1F] font-extralight" />,
+    icon: (
+      <Home
+        className="w-8 h-8 text-[#161D1F] font-extralight"
+        strokeWidth={1}
+      />
+    ),
     title: "Homecare Services",
     description: "Expert Healthcare professionals at your doorstep",
     imagePath: "./Homecare.svg",
@@ -47,7 +52,7 @@ export const healthcareCards: CardData[] = [
     },
   },
   {
-    icon: <BaggageClaim className="w-8 h-8 text-[#161D1F]" />,
+    icon: <BaggageClaim className="w-8 h-8 text-[#161D1F]" strokeWidth={1} />,
     title: "E-Pharmacy",
     description: "Convenient online pharmacy for all your needs",
     imagePath: "./E-Pharmacy.svg",
@@ -76,7 +81,7 @@ export const healthcareCards: CardData[] = [
     },
   },
   {
-    icon: <Stethoscope className="w-8 h-8 text-[#161D1F]" />,
+    icon: <Stethoscope className="w-8 h-8 text-[#161D1F]" strokeWidth={1} />,
     title: "Online Consultation",
     description: "Connect with specialists for personalized medical advice",
     imagePath: "./doctor.svg",
@@ -105,7 +110,7 @@ export const healthcareCards: CardData[] = [
     },
   },
   {
-    icon: <Heart className="w-8 h-8 text-[#161D1F]" />,
+    icon: <Heart className="w-8 h-8 text-[#161D1F]" strokeWidth={1} />,
     title: "Lab & Diagnostic Test",
     description: "Receive your lab results right at home.",
     imagePath: "./Lab.svg",
@@ -136,7 +141,7 @@ export const healthcareCards: CardData[] = [
     },
   },
   {
-    icon: <Baby className="w-8 h-8 text-[#161D1F]" />,
+    icon: <Baby className="w-8 h-8 text-[#161D1F]" strokeWidth={1} />,
     title: "Health Checkups",
     description: "Keep your health in good condition with our health checkup.",
     imagePath: "./HealthCheckUp.svg",

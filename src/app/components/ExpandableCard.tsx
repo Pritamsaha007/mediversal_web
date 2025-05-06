@@ -13,7 +13,7 @@ export default function ExpandableCard({
 
   return (
     <div
-      className="relative flex rounded-lg overflow-hidden shadow-lg transition-all duration-300 ease-in-out bg-white"
+      className="relative flex rounded-r-2xl my-3  transition-all duration-300 ease-in-out overflow-hidden"
       style={{
         width: isHovered ? "800px" : "300px",
         height: "420px",
@@ -22,7 +22,7 @@ export default function ExpandableCard({
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* Main Card Content */}
-      <div className="flex-none w-72 relative">
+      <div className="flex-none w-[300px] relative border-3 rounded-2xl overflow-hidden transition-all duration-300 ease-in-out">
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
@@ -60,11 +60,11 @@ export default function ExpandableCard({
 
       {/* Additional Information (shown on hover) */}
       <div
-        className={`flex-grow transition-all duration-800 ease-in-out bg-white ${
+        className={`flex-grow transition-all duration-800 ease-in-out bg-white border-r-4 border-y-4 mt-4 mb-4 rounded-r-2xl ${
           isHovered ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-2"
         }`}
       >
-        <div className="p-6 h-full flex flex-col">
+        <div className="p-4 h-full flex flex-col">
           {/* Header */}
           <div className="border-b pb-4 mb-6 mt-2">
             <h3 className="text-xl font-bold text-[#161D1F]">
